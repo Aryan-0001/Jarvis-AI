@@ -31,4 +31,4 @@ This is a simple voice assistant program named **Jarvis** that can perform vario
   pip install speechrecognition pyttsx3 pyautogui psutil
 
 
-Clone Repo: git https://github.com/Aryan-0001/Jarvis-AI.git
+Clone Repo: git clone https://github.com/Aryan-0001/Jarvis-AI.git
