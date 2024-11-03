@@ -1,0 +1,3 @@
+SpeechRecognition
+pyttsx3
+pyautogui
