@@ -29,5 +29,4 @@ Install Libraries and Requirements
 ```
   pip install -r requirements.txt
 ```
--- Add Imgs.
 
