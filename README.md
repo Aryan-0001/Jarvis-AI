@@ -18,16 +18,19 @@ This is a simple voice assistant program named **Jarvis** that can perform vario
 - **Can Send a message on WhatsApp to any contact**
 - **Can shutdown your desktop**
 
-## Installation
+## Requirements
+- Python 3.x
+- Libraries:
+  - `speech_recognition`
+  - `pyttsx3`
+  - `pyautogui`
+  - `psutil`
+  
+  You can install the required libraries using pip:
+  ```bash
+  pip install speechrecognition pyttsx3 pyautogui psutil
 
-Clone Repository
-```
+
+Clone Repo:
+```bash
 git clone https://github.com/Aryan-0001/Jarvis-AI.git
-```
-
-Install Libraries and Requirements
-```
-  pip install -r requirements.txt
-```
--- Add Imgs.
-
