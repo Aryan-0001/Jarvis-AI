@@ -334,14 +334,139 @@ def jarvis_command_handler():
                     return True
                 elif any(phrase in command2 for phrase in ["bye", "goodbye", "see you later", "adios"]):
                     speak("Goodbye Sir! If you want to talk again, please say my name, I'm here!")
+                    for i in range(8): pyautogui.hotkey('ctrl','-')
+                    import cv2
+                    import os
+                    import time
+                    import wave
+                    from threading import Thread
+                    import pyaudio
+
+                    # Extended ASCII characters for even finer resolution
+                    ASCII_CHARS = "XXXXX>>>>>>>>>>>>>################:::::::::::::::ZZZZZZZZZZTTTTTTTTTTTTTTTTTDDDDDDDDDDDKKKKKKKKLLLLLLLLMMMMMMMMNNNNNNNOOOOOOO000000000"
+
+                    # ANSI color codes for terminal
+                    COLORS = [
+                        "\033[38;5;16m",  # Black
+                        "\033[38;5;52m",  # Dark Red
+                        "\033[38;5;124m", # Red
+                        "\033[38;5;166m", # Orange
+                        "\033[38;5;190m", # Yellow
+                        "\033[38;5;46m",  # Green
+                        "\033[38;5;33m",  # Blue
+                        "\033[38;5;21m",  # Dark Blue
+                        "\033[38;5;15m",  # White
+                    ]
+                    RESET_COLOR = "\033[0m"
+
+                    def frame_to_ascii(frame, width=300):
+                        """Converts a video frame to colored ASCII art with maximized resolution."""
+                        height, orig_width = frame.shape[:2]
+                        aspect_ratio = orig_width / height
+                        new_width = width
+                        new_height = int(new_width / aspect_ratio / 2)
+                        resized = cv2.resize(frame, (new_width, new_height))
+                        gray = cv2.cvtColor(resized, cv2.COLOR_BGR2GRAY)
+                        scale_factor = 255 // (len(ASCII_CHARS) - 1)
+
+                        # Map intensity to ASCII and color
+                        ascii_frame = "\n".join(
+                            "".join(
+                                COLORS[min(pixel // (255 // (len(COLORS) - 1)), len(COLORS) - 1)]
+                                + ASCII_CHARS[min(pixel // scale_factor, len(ASCII_CHARS) - 1)]
+                                + RESET_COLOR
+                                for pixel in row
+                            )
+                            for row in gray
+                        )
+                        return ascii_frame
+
+                    def play_audio(audio_path):
+                        """Plays the audio file using pyaudio."""
+                        chunk = 2048  #1024
+                        wf = wave.open(audio_path, 'rb')
+                        p = pyaudio.PyAudio()
+
+                        stream = p.open(format=p.get_format_from_width(wf.getsampwidth()),
+                                        channels=wf.getnchannels(),
+                                        rate=wf.getframerate(),
+                                        output=True)
+
+                        data = wf.readframes(chunk)
+                        while data:
+                            stream.write(data)
+                            data = wf.readframes(chunk)
+
+                        stream.stop_stream()
+                        stream.close()
+                        p.terminate()
+
+                    def play_video_ascii_with_audio(video_path, audio_path, frame_skip=4):
+                        """Plays the colored ASCII video synchronized with the audio."""
+                        # Open the audio file to get its duration
+                        with wave.open(audio_path, 'rb') as wf:
+                            audio_duration = wf.getnframes() / wf.getframerate()
+
+                        cap = cv2.VideoCapture(video_path)
+                        if not cap.isOpened():
+                            print("Error: Cannot open video.")
+                            return
+
+                        # Get the video frame rate and duration
+                        fps = cap.get(cv2.CAP_PROP_FPS)
+                        video_duration = cap.get(cv2.CAP_PROP_FRAME_COUNT) / fps
+                        frame_time = 1 / fps
+                        
+                        # Further adjust for faster playback by reducing frame_time even more
+                        frame_time /= 2  # Speed up by 2x (adjust as needed)
+
+                        # Calculate the alignment offset
+                        total_duration = min(audio_duration, video_duration)
+
+                        # Start audio playback in a separate thread
+                        audio_thread = Thread(target=play_audio, args=(audio_path,))
+                        audio_thread.start()
+
+                        start_time = time.time()
+                        try:
+                            frame_counter = 0
+                            while cap.isOpened():
+                                current_time = time.time()
+                                elapsed_time = current_time - start_time
+                                if elapsed_time > total_duration:
+                                    break
+
+                                ret, frame = cap.read()
+                                if not ret:
+                                    print("Error: Could not read frame.")
+                                    break
+
+                                # Skip frames to speed up the video
+                                if frame_counter % frame_skip == 0:
+                                    ascii_art = frame_to_ascii(frame)  # Use the maximized resolution ASCII
+                                    os.system("cls")  # For Windows, use `os.system("clear")`
+                                    print(ascii_art)
+
+                                frame_counter += 1
+
+                                # Adjust sleep time dynamically for faster playback
+                                processing_time = time.time() - current_time
+                                sleep_time = max(0, frame_time - processing_time)
+                                time.sleep(sleep_time)
+                        finally:
+                            cap.release()
+                            audio_thread.join()
+
+                    # Paths to video and audio files
+                    video_path = "C:\\ADD\\YOUR\\PATH\\HERE\\DP_bye_bye_bye.mp4"
+                    audio_path = "C:\\ADD\\YOUR\\PATH\\HERE\\DP_MP4_AUDIO.wav"
+
+                    # Play video with synchronized audio
+                    play_video_ascii_with_audio(video_path, audio_path, frame_skip=4)
+
                     speak("Have a nice day, sir!")
                     sys.exit(0)
 
-                # elif "start hand tracker" or "activate hand tracker" in command2:
-                #     speak("Starting hand tracker.")
-                #     speak("if you wish to talk with me again, just show all five fingers to stop hand tracker .")
-                #     HandTracker()
-                #     return True
                 else:
                     search_and_speak(command2)
                     return True
