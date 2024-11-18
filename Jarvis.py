@@ -334,7 +334,7 @@ def jarvis_command_handler():
                     return True
                 elif any(phrase in command2 for phrase in ["bye", "goodbye", "see you later", "adios"]):
                     speak("Goodbye Sir! If you want to talk again, please say my name, I'm here!")
-                    for i in range(8): pyautogui.hotkey('ctrl','-')
+                    # for i in range(8): pyautogui.hotkey('ctrl','-')    Uncomment this for proper view of ascii video if you're running this on terminal directly
                     import cv2
                     import os
                     import time
