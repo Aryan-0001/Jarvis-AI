@@ -1,0 +1,96 @@
+##Router###
+
+enable
+configure terminal 
+no ip domain-lookup
+hostname R1
+banner motd #Unauthorized access to this device is prohibited!#
+
+interface g0/0/0
+description Connect to Subnet B
+ip address 192.168.10.129 255.255.255.192
+no shutdown 
+exit
+
+interface g0/0/1
+description Connect to Subnet A
+ip address 192.168.10.1 255.255.255.128
+no shutdown 
+exit
+
+enable secret NoOneShouldKnow
+service password-encryption
+security passwords min-length 10
+
+ip domain-name netsec.com
+username netadmin secret Ci$co12345
+
+line console 0
+password C@nsPassw!
+login
+exit
+
+line vty 0 15
+transport input ssh
+login local
+exit
+
+crypto key generate rsa
+1024
+exit
+copy running-config startup-config
+
+=====================================================
+
+##SWITCH###
+
+enable
+configure terminal 
+no ip domain-lookup
+hostname S1
+banner motd #Unauthorized access to this device is prohibited!#
+
+interface vlan 1
+description Switch Subnet A
+ip address 192.168.10.2 255.255.255.128
+no shutdown 
+exit
+
+ip default-gateway 192.168.10.1
+
+enable secret NoOneShouldKnow
+service password-encryption
+
+ip domain-name netsec.com
+username netadmin secret Ci$co12345
+
+line console 0
+password C@nsPassw!
+login
+exit
+
+line vty 0 15
+transport input ssh
+login local
+exit
+
+crypto key generate rsa
+1024
+
+int range f0/1 - 4, f0/7 - 24, g0/1 - 2
+description Unused switch ports
+shutdown
+
+end
+copy running-config startup-config
+
+=========================================
+PC-A Network Configuration
+IPv4 Address 192.168.10.126
+Subnet Mask 255.255.255.128
+IPv4 Default Gateway 192.168.10.1
+===========================================
+PC-B Network Configuration
+IPv4 Address 192.168.10.190
+Subnet Mask 255.255.255.192
+IPv4 Default Gateway 192.168.10.129
