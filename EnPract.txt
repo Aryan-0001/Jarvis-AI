@@ -1,4 +1,18 @@
-YT LINK : https://www.youtube.com/watch?v=KhN4BkZLGqQ
+
+Steps:
+1) MOVE ROUTER AND SWITCH THAT IS ON THE RIGHT SIDE TO THE RACK ON LEFT SIDE (B/W THE WIRES AND INSTRUCTIONS)
+2) SEE HOW EACH DEVICE IS CONNECTED LIKE PC-A TO S1 VIA THE FAST-ETHERNET 0/6 CABLE, SO TAKE THE GREEN CABLE (2nd row 2nd col) , go to the 1st pc after clicking on that cable and go to the port on that pc 1 (below) (it should say fast ethernet 0) click it, then zoom on the rack portion and then search for fast-ethernet 0/6 and click that (wire gets connected)
+
+3) now take the same cable (green one) and then go to rack(swithc-a) and see FastEthernet0/5 and click on router-a (GigabitEthernet0/0/1)
+
+4)  on the router-a see GigabitEthernet0/0/0 (just below the previous one) and then connect to the other pc port at FastEthernet0
+
+5) click on red lightening cable and then select the bluw cable(1st one) (fibre-optic cable) , now zoom in on the first pc (jo cpu type dikh rha h) and click on right wala port , now go to router-a and click on console( blue color connection made)
+
+6) switch on the router (i and o button), pc's (click red button)
+
+7) click on the 1st pc( jo cpu type wala h neeche) and go to terminal and click 'ok' now paste the code for router
+(YT LINK : https://www.youtube.com/watch?v=KhN4BkZLGqQ)
 
 ##Router###
 
@@ -44,6 +58,9 @@ copy running-config startup-config
 
 =====================================================
 
+got R1# ? - THEN IT'S OK
+8) now go to switch and click on the rightmost port , then Switch-A CLI will open now press 'ctrl'+'shift'+'enter'
+
 ##SWITCH###
 
 enable
@@ -87,12 +104,21 @@ end
 copy running-config startup-config
 
 =========================================
+
+9) Now put the ip address for host-a (go to pc1 and click on ip-configuration) then in IPV4 put ipv4 address and same for others...
+
 PC-A Network Configuration
 IPv4 Address 192.168.10.126
 Subnet Mask 255.255.255.128
 IPv4 Default Gateway 192.168.10.1
 ===========================================
+
+10) go to 2nd cpu , click on ip configuration and put ipv4 and all again for this one ...
+
 PC-B Network Configuration
 IPv4 Address 192.168.10.190
 Subnet Mask 255.255.255.192
 IPv4 Default Gateway 192.168.10.129
+
+
+now submit(he got 100%)
