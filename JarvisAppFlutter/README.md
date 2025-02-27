@@ -2,6 +2,12 @@
 
 J.A.R.V.I.S. is a voice-activated AI assistant built using Dart and Flutter. It mimics the behavior and responses of Tony Stark's J.A.R.V.I.S. from Iron Man, providing intelligent interaction, app control, and real-time information retrieval.
 
+<br>
+
+## CHECK OUT JARVIS IN ACTION: 
+## https://www.instagram.com/p/DF50tRBMD31/?img_index=2
+<br>
+
 ## Features
 
 - **Voice Recognition & Text-to-Speech:** Uses speech-to-text and text-to-speech capabilities to interact with users.
