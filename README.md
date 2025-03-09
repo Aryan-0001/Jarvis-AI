@@ -4,7 +4,7 @@
 
 # Key Points:
 ## 1. Dart-Flutter Jarvis AI App
-- Purpose: A voice-activated assistant that uses Google’s Generative AI, integrates speech-to-text, text-to-speech, and launches apps or provides weather, time, etc.
+- Purpose: A voice-activated assistant that uses Google’s Generative AI, integrates speech-to-text, text-to-speech, and launches apps or provides weather, time, tells jokes , can talk about/ explain anything but obviously with JARVIS like answers ;) .
 - Tech Stack:
     - Flutter for UI
     - Google Generative AI for chat responses
@@ -18,7 +18,7 @@
    - Run the app on Android or use in an emulator
 
 ## 2. Windows Jarvis AI App (Powershell/CMD)
-- Purpose: A voice-activated assistant for Windows that can perform tasks like searching the web, opening apps, playing music, telling jokes, etc.
+- Purpose: A voice-activated assistant for Windows that can perform tasks like searching the web, opening apps, playing music, telling jokes, chat about anything or discuss anything, can write code on your terminal , try saying 'bye' or 'goodbye jarvis' to start for ascii video , and many more things like sending a message using whatsapp to anyone on your contact list or even just a number , etc.
 - Tech Stack:
   - Python for core logic
   - SpeechRecognition (speech_recognition package) for voice input
