@@ -1,5 +1,7 @@
 # J.A.R.V.I.S. - AI Virtual Assistant
 
+# DOWNLOAD THE LATEST RELEASE: [download link](https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/app-release.apk)
+
 J.A.R.V.I.S. is a voice-activated AI assistant built using Dart and Flutter. It mimics the behavior and responses of Tony Stark's J.A.R.V.I.S. from Iron Man, providing intelligent interaction, app control, and real-time information retrieval.
 
 <br>
