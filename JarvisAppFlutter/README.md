@@ -3,15 +3,11 @@
 # DOWNLOAD THE LATEST RELEASE: [download link](https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/app-release.apk)
 
 J.A.R.V.I.S. is a voice-activated AI assistant built using Dart and Flutter. It mimics the behavior and responses of Tony Stark's J.A.R.V.I.S. from Iron Man, providing intelligent interaction, app control, and real-time information retrieval.
-
-<br>
-
-## CHECK OUT JARVIS IN ACTION: 
-## https://www.instagram.com/p/DF50tRBMD31/?img_index=2
 <br>
 
 ## Features
 
+- **Active Conversation Mode** : Can hear and talk continuously when 'jarvis' or 'hey jarvis' gets triggered.
 - **Voice Recognition & Text-to-Speech:** Uses speech-to-text and text-to-speech capabilities to interact with users.
 - **App Control:** Can open system apps like Chrome, WhatsApp, and Camera.
 - **Weather & Time Updates:** Provides real-time weather searches and current time updates.
