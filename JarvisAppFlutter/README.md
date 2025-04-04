@@ -42,7 +42,7 @@ J.A.R.V.I.S. is a voice-activated AI assistant built using Dart and Flutter. It 
 
 ## Usage
 
-- Press the "Talk to Jarvis" button and speak your command.
+- ~Press the "Talk to Jarvis" button and speak your command.~ Now you can just say 'hey jarvis' or 'jarvis' to talk!
 - Ask for the time, weather, or open specific apps.
 - J.A.R.V.I.S. will respond with voice and text output.
 
