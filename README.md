@@ -1,7 +1,7 @@
 # Welcome to Jarvis-AI REPO 👋🏻!
 - Want to try out jarvis on your mobile?[👉🏻DOWNLOAD APK 🤖](https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/app-release.apk)<br> Check out: [Flutter App](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisAppFlutter)
 ## Check out JARVIS in action: https://www.instagram.com/p/DIRpe-xTabF/
-  ## DO CHECK OUT THE RELEASE FOR LATEST THE APK 👀 <br/> <br> ![Dart](https://img.shields.io/badge/Dart-%230175C1.svg?style=for-the-badge&logo=dart&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%23025687.svg?style=for-the-badge&logo=flutter&logoColor=white)
+  ## DO CHECK OUT THE RELEASE FOR THE LATEST  APK 👀 <br/> <br> ![Dart](https://img.shields.io/badge/Dart-%230175C1.svg?style=for-the-badge&logo=dart&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%23025687.svg?style=for-the-badge&logo=flutter&logoColor=white)
 - Want to try it out on windows? <br> Check out: [Jarvis Windows](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisWindows) <br/> <br> ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-%23121011.svg?style=for-the-badge&logo=windows&logoColor=white)
 
 # Key Points:
