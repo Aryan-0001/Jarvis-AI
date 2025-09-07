@@ -18,6 +18,9 @@
    - Install Flutter
    - Set up Google Generative AI API key
    - Run the app on Android or use in an emulator
+ 
+
+     ## [View Screenshots](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisAppFlutter/Images)
 
 ## 2. Windows Jarvis AI App (Powershell/CMD)
 - Purpose: A voice-activated assistant for Windows that can perform tasks like searching the web, opening apps, playing music, telling jokes, chat about anything or discuss anything, can write code on your terminal , try saying 'bye' or 'goodbye jarvis' to start the ascii video , and many more things like sending a message using whatsapp to anyone on your contact list or even just a number , etc.
