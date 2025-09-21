@@ -5,6 +5,10 @@
 </p>
 
 # Welcome to Jarvis-AI REPO 👋🏻!
+<p align="left">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Consolas&size=30&pause=500&color=00FF00&center=true&vCenter=true&width=750&lines=Welcome+to+JARVIS+AI+REPO+!;Want+to+try+out+JARVIS+on+your+mobile+?;Click+the+link+below+to+download+now+!" />
+</p>
+
 - Want to try out jarvis on your mobile?[👉🏻DOWNLOAD APK 🤖](https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/app-release.apk)<br> Check out: [Flutter App](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisAppFlutter)
 ## Check out JARVIS in action: https://www.instagram.com/p/DIRpe-xTabF/
   ## DO CHECK OUT THE RELEASE FOR THE LATEST  APK 👀 <br/> <br> ![Dart](https://img.shields.io/badge/Dart-%230175C1.svg?style=for-the-badge&logo=dart&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%23025687.svg?style=for-the-badge&logo=flutter&logoColor=white)
@@ -41,3 +45,8 @@
     - Install Python
     - Install dependencies (pyttsx3, speech_recognition, pyautogui, etc.)
     - Run the script via CMD or PowerShell
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Consolas&size=24&pause=500&color=00FF00&center=true&vCenter=true&width=750&lines=You+have+reached+the+end+of+this+REPO;Please+leave+behind+a+star+if+u+enjoyed+it+!;Thanks+!"/>
+
+---
+---
