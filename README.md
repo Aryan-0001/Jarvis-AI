@@ -1,6 +1,8 @@
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI)
-
-![Downloads](https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/total?label=Downloads&color=brightgreen)
+<p align="center">
+<img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" width="130" height="45"/>
+  <br>
+<img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/total?label=Downloads&color=brightgreen" width="190" height="45"/>
+</p>
 
 # Welcome to Jarvis-AI REPO 👋🏻!
 - Want to try out jarvis on your mobile?[👉🏻DOWNLOAD APK 🤖](https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/app-release.apk)<br> Check out: [Flutter App](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisAppFlutter)
