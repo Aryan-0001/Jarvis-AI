@@ -46,7 +46,7 @@
     - Install dependencies (pyttsx3, speech_recognition, pyautogui, etc.)
     - Run the script via CMD or PowerShell
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Consolas&size=24&pause=100&color=00FF00&center=true&vCenter=true&width=750&lines=You+have+reached+the+end+of+this+REPO;Please+leave+behind+a+star+if+u+enjoyed+it+!;Please+feel+free+to+drop+a+suggestion+in+discussion;Thanks+!"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=cursive&size=40&pause=100&color=00FF00&center=true&vCenter=true&width=750&lines=You+have+reached+the+end+of+this+REPO;Please+leave+behind+a+star+if+u+enjoyed+it+!;Please+feel+free+to+drop+a+suggestion+in+discussion;Thanks+!"/>
 
 ---
 ---
