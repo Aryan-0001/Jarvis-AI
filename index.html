@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>J.A.R.V.I.S. AI</title>
-    <meta name="description" content="J.A.R.V.I.S. is your personal AI assistant. Voice-activated. Offline-capable. Task automation. Built by Aryan Nair." />
-
-    <!-- FAVICON -->
+    <title>JARVIS AI</title>
+    <meta name="description" content="JARVIS. is your personal AI assistant. Voice-activated." />
     <link rel="icon" href="https://lh3.googleusercontent.com/NfhsflluPRoI9WpJLKg74fl6oSimmO8bif6d2BQ7_kF6wEj2vYbbkmBYE9ThhEpgHzCMcaov1s27rYs1n1SzCw" type="image/png"/>
-
-    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- STYLES -->
     <style>
         :root {
             --bg-main: radial-gradient(circle at 20% 20%, #002b55 0%, #000616 60%);
@@ -30,9 +23,7 @@
             --radius-md: .75rem;
             --border-card: 1px solid rgba(0, 217, 255, 0.25);
         }
-
         * { box-sizing: border-box; }
-
         body {
             margin: 0;
             background: var(--bg-main), #000616;
@@ -43,11 +34,8 @@
             display: flex;
             flex-direction: column;
         }
-
         a { color: var(--accent); text-decoration: none; }
         a:hover { text-shadow: var(--accent-glow); }
-
-        /* Layout wrapper */
         .page-wrap {
             width: 100%;
             max-width: 1400px;
@@ -56,10 +44,6 @@
             display: grid;
             row-gap: 4rem;
         }
-
-        /*****************
-         * HERO SECTION
-         *****************/
         .hero {
             display: grid;
             grid-template-columns: 1fr;
@@ -74,9 +58,7 @@
                 text-align: left;
             }
         }
-
         .hero-main { position: relative; z-index: 2; }
-
         .brand-row {
             display: flex;
             align-items: center;
@@ -85,7 +67,6 @@
             flex-wrap: wrap;
         }
         @media(min-width:900px){ .brand-row { justify-content: flex-start; } }
-
         .brand-logo {
             width: 48px; height: 48px;
             border-radius: var(--radius-md);
@@ -100,7 +81,6 @@
         .brand-text { display:flex; flex-direction:column; font-size:.9rem; line-height:1.2rem; }
         .brand-text .name { font-weight:600; color:var(--text-main); letter-spacing:.08em; text-transform:uppercase; }
         .brand-text .tagline { color:var(--accent); font-size:.75rem; font-weight:400; }
-
         .hero-headline {
             margin-top:1.5rem;
             font-size: clamp(1.8rem, 1.2vw + 1rem, 2.4rem);
@@ -110,22 +90,18 @@
             text-shadow: 0 0 10px rgba(0,0,0,0.8);
             letter-spacing:.03em;
         }
-
         .hero-typing { margin-top:1rem; min-height:3.2rem; }
         .hero-typing img{ max-width:100%; height:auto; filter: drop-shadow(0 0 6px rgba(0,217,255,.4)); }
-
         .hero-desc {
             margin-top:1rem; color:var(--text-dim);
             font-size:.9rem; line-height:1.5rem; max-width:42ch;
             margin-left:auto; margin-right:auto;
         }
         @media(min-width:900px){ .hero-desc { margin-left:0; } }
-
         .cta-row {
             margin-top:2rem; display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;
         }
         @media(min-width:900px){ .cta-row { justify-content:flex-start; } }
-
         .btn {
             cursor:pointer; border-radius: var(--radius-lg);
             font-size:.8rem; line-height:1rem; padding: .9rem 1.1rem; font-weight:500;
@@ -135,14 +111,10 @@
         }
         .btn.primary { background: radial-gradient(circle at 0% 0%, rgba(0,217,255,.22) 0%, rgba(0,0,0,0) 70%), rgba(0, 40, 60, .4); box-shadow: var(--accent-glow), 0 20px 40px rgba(0,0,0,.8); }
         .btn small{ display:block; font-size:.7rem; color:var(--text-dim); line-height:1.2rem; font-weight:400; }
-
-        /* HERO VISUALS (Globe + Radar) */
         .hero-visual-wrap { position: relative; }
         .hud-flex {
             display:flex; align-items:center; justify-content:center; gap:40px; position:relative;
         }
-
-        /* Globe */
         #earth-wrap { display:flex; flex-direction:column; align-items:center; }
         #earth-container {
             width: 260px; height: 260px; border-radius: 50%; overflow: hidden;
@@ -154,8 +126,6 @@
             margin-top:.8rem; text-align:center; font-size:.9rem; color:var(--accent);
             text-shadow: 0 0 10px rgba(0,217,255,0.8); letter-spacing:.1em; font-weight:500;
         }
-
-        /* Radar */
         .radar {
             position: relative; width: 260px; height: 260px; border-radius: 50%;
             background: radial-gradient(circle at 50% 50%, rgba(0,217,255,0.15) 0%, rgba(0,0,0,0) 70%);
@@ -173,7 +143,6 @@
         @keyframes sweep { 0% { transform: rotate(0deg) translateY(-50%);} 100% { transform: rotate(360deg) translateY(-50%);} }
         .radar-dot { position:absolute; width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:var(--accent-glow); opacity:.8; animation: blink 2s infinite; }
         @keyframes blink { 0%,100% {opacity:.2;} 50% {opacity:1;} }
-
         .hud-card {
             position:absolute; bottom:-1rem; background: var(--panel-bg); border: var(--border-card);
             backdrop-filter: blur(12px) saturate(160%); -webkit-backdrop-filter: blur(12px) saturate(160%);
@@ -184,19 +153,13 @@
         .hud-head { display:flex; justify-content:space-between; align-items:flex-start; color:var(--accent); font-weight:500; font-size:.7rem; margin-bottom:.5rem; }
         .hud-body-line { display:flex; justify-content:space-between; font-size:.7rem; color:var(--text-dim); }
         .hud-body-line span.value { color:var(--text-main); text-align:right; max-width:60%; }
-
-        /*****************
-         * FEATURES GRID
-         *****************/
         .section-header { text-align:center; }
         .section-eyebrow { font-size:.7rem; font-weight:500; color:var(--accent); letter-spacing:.15em; text-transform:uppercase; }
         .section-title { margin-top:.5rem; font-size: clamp(1.2rem, .4vw + 1rem, 1.4rem); font-weight:600; color:var(--text-main); line-height:1.4rem; }
         .section-desc { margin-top:.75rem; font-size:.8rem; color:var(--text-dim); line-height:1.4rem; max-width:52ch; margin-left:auto; margin-right:auto; }
-
         .features-grid { margin-top:2rem; display:grid; grid-template-columns:1fr; gap:1rem; }
         @media(min-width:700px){ .features-grid { grid-template-columns:repeat(2,1fr);} }
         @media(min-width:1100px){ .features-grid { grid-template-columns:repeat(4,1fr);} }
-
         .feature-card {
             position:relative; background: var(--panel-bg); border: var(--border-card);
             backdrop-filter: blur(10px) saturate(160%); -webkit-backdrop-filter: blur(10px) saturate(160%);
@@ -210,13 +173,8 @@
         }
         .feature-head { font-size:.9rem; font-weight:600; color:var(--text-main); line-height:1.2rem; margin-bottom:.5rem; }
         .feature-body { font-size:.75rem; line-height:1.25rem; color:var(--text-dim); flex-grow:1; }
-
-        /*****************
-         * SPLIT PANEL
-         *****************/
         .split-panel { display:grid; grid-template-columns:1fr; gap:1.5rem; margin-top:1rem; }
         @media(min-width:900px){ .split-panel { grid-template-columns: repeat(2,1fr);} }
-
         .device-card {
             background: var(--panel-bg); border: var(--border-card); border-radius: var(--radius-lg);
             padding:1rem 1.25rem 1.25rem; box-shadow:0 30px 60px rgba(0,0,0,.9);
@@ -232,7 +190,6 @@
             font-weight:500; letter-spacing:.05em; text-shadow:var(--accent-glow); white-space:nowrap;
         }
         .device-body { font-size:.75rem; line-height:1.4rem; color:var(--text-dim); margin-top:1rem; }
-
         .code-window {
             font-size:.7rem; line-height:1.2rem; background:rgba(0,0,0,.4); border:1px solid rgba(0,217,255,.3);
             border-radius:var(--radius-md); padding:.75rem .9rem; color:var(--accent);
@@ -242,10 +199,6 @@
         .code-prefix { color:#007d99; }
         .code-cmd { color:#00d9ff; }
         .code-output { color:#6ea9c9; }
-
-        /*****************
-         * FOOTER
-         *****************/
         footer {
             margin-top:3rem; padding-top:2rem; border-top:1px solid rgba(0,217,255,.15);
             text-align:center; font-size:.7rem; color:var(--text-dim); line-height:1.3rem;
@@ -255,25 +208,18 @@
         .badge-row { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center; }
         .badge-row a img { height:24px; border-radius:4px; border:1px solid rgba(0,217,255,.4); box-shadow:0 0 10px rgba(0,217,255,.4); }
         .credit { max-width:60ch; }
-
         .bg-ring {
             position: fixed; inset:0; margin:auto; width:40vmin; height:40vmin; border-radius:50%;
             background:radial-gradient(circle at 50% 50%, rgba(0,217,255,.18) 0%, rgba(0,0,0,0) 70%);
             box-shadow:0 0 120px 60px rgba(0,217,255,.08); opacity:.4; filter:blur(30px); pointer-events:none; z-index:0;
         }
-
         @media(max-width:480px){ .page-wrap { padding-bottom:8rem; } }
     </style>
 </head>
 <body>
-
     <div class="bg-ring"></div>
-
     <main class="page-wrap">
-
-        <!-- HERO -->
         <section class="hero">
-            <!-- left -->
             <div class="hero-main">
                 <div class="brand-row">
                     <div class="brand-logo">JARVIS</div>
@@ -282,30 +228,78 @@
                         <span class="tagline">Inspired by Iron Man — Built for real life</span>
                     </div>
                 </div>
-
                 <h1 class="hero-headline">
-                    Voice. Memory. Autonomy.<br/>
-                    Your AI, not just a chatbot.
+                    <red>J</red>ust <br><red>A</red> <br> <red>R</red>ather <br> <red>V</red>ery <br> <red>I</red>ntelligent <br> <red>S</red>ystem.
+                    <style>
+                        .hero-headline red { color: #ff4c4c; }
+                    </style>
+                    <br/>
                 </h1>
-
                 <div class="hero-typing">
                     <img src="https://readme-typing-svg.herokuapp.com?font=Consolas&size=32&pause=1200&color=00D9FF&center=true&vCenter=true&width=600&lines=Welcome+to+J.A.R.V.I.S.+AI;How+can+I+assist+you%3F;Standing+by..." alt="typing banner"/>
                 </div>
+                <div class="hero-desc">
+                <div class="platform-tabs" role="tablist" aria-label="Choose your platform">
+                    <button role="tab" class="btn " aria-selected="false" aria-controls="android-desc" id="android-tab">Android</button>
+                    <button role="tab" class="btn" aria-selected="false" aria-controls="desktop-desc" id="desktop-tab">Desktop</button>
+                </div>
 
-                <p class="hero-desc">
+                <div id="android-desc" role="tabpanel" aria-labelledby="android-tab">
                     <strong>Mobile-first.</strong> J.A.R.V.I.S. for Android is a <em>pure voice</em> assistant built with Flutter/Dart.
-                    Say <em>“Hey Jarvis”</em> (or just <em>“Jarvis”</em>) to start a continuous conversation mode and
-                    end it with <em>“bye”</em> or <em>“goodbye”</em>. <br> Inspired by IronMan ― Built for Real Life <br> JARVIS can opens the browser,
-                    tells weather and time, and handles general conversation.
+                    Say <em>“Hey Jarvis”</em> (or just <em>“Jarvis”</em>) to start continuous conversation mode and
+                    end it with <em>“bye”</em> or <em>“goodbye”</em>. <br>
+                    Inspired by Iron Man — Built for Real Life. <br>
+                    JARVIS can open the browser, tell weather and time, and handle general conversation.
                     Memory lasts for the current session only — no database yet.
-                    A minimal desktop version also runs directly in the <strong>terminal</strong> (requirements needed) and is voice-operated too.
-                </p>
+                </div>
+
+                <div id="desktop-desc" role="tabpanel" aria-labelledby="desktop-tab" hidden>
+                    <strong>Terminal edition.</strong> A minimal desktop version runs directly in the
+                    <strong>terminal</strong> (requirements needed) and is voice-operated.
+                    Wake with <em>“Jarvis”</em>, chat hands-free, and use quick commands for utility tasks.
+                </div>
+                </div>
+
+                <style>
+                .platform-tabs .btn.is-active { box-shadow: 0 0 0 2px currentColor inset; }
+                .platform-tabs { display: inline-flex; gap: .5rem; margin-bottom: .5rem; }
+                </style>
+
+                <script>
+                document.querySelectorAll('.platform-tabs .btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                    const targetId = btn.getAttribute('aria-controls');
+                    document.querySelectorAll('[role="tabpanel"]').forEach(p => p.hidden = true);
+                    document.getElementById(targetId).hidden = false;
+                    document.querySelectorAll('.platform-tabs .btn').forEach(b => {
+                        b.classList.remove('is-active');
+                        b.setAttribute('aria-selected', 'false');
+                    });
+                    btn.classList.add('is-active');
+                    btn.setAttribute('aria-selected', 'true');
+                    });
+                });
+                </script>
+
+
 
                 <div class="cta-row">
                     <a class="btn primary" href="https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/app-release.apk" target="_blank" rel="noopener">
                         <span>⬇ Download Android APK</span>
                         <small>Flutter/Dart · Voice-first</small>
                     </a>
+                    <a class="btn primary" href="https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisWindows" target="_blank" rel="noopener">
+                        <span> Desktop Version </span>
+                        <small>Flutter/Dart · Voice-first</small>
+                    </a>
+
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <br>
+
                     <a class="btn" href="#features">
                         <span>⚙ See Features</span>
                         <small>Wake word, continuous mode</small>
@@ -456,7 +450,12 @@
                             Desktop / Laptop
                             <small>Terminal build · Voice-only</small>
                         </div>
-                        <div class="status-pill">DEV PREVIEW</div>
+                            <div class="cta-row">
+                                <a class="btn primary" href="https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisWindows" target="_blank" rel="noopener">
+                                    <span> Desktop Version </span>
+                                    <small>Flutter/Dart · Voice-first</small>
+                                </a>
+                            </div>
                     </div>
 
                     <div class="device-body">
@@ -478,7 +477,12 @@
                             Android App
                             <small>Flutter / Dart · Voice-first</small>
                         </div>
-                        <div class="status-pill">ALPHA APK</div>
+                            <div class="cta-row">
+                                <a class="btn primary" href="https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/app-release.apk" target="_blank" rel="noopener">
+                                    <span>⬇ Download Android APK</span>
+                                    <small>Flutter/Dart · Voice-first</small>
+                                </a>
+                            </div>
                     </div>
 
                     <div class="device-body">
@@ -490,7 +494,7 @@
 
                     <div class="code-window">
 <span class="code-prefix">you:</span> <span class="code-cmd">"Jarvis, what's the weather like?"</span>
-<br><span class="code-prefix">jarvis:</span> <span class="code-output">"Here's the forecast for your location today."</span>
+<br><span class="code-prefix">jarvis:</span> <span class="code-output">"Here's the forecast for your location."</span>
                     </div>
                 </div>
             </div>
@@ -511,7 +515,7 @@
                 </div>
 
                 <div class="credit">
-                    <strong>J.A.R.V.I.S. AI</strong> is being built by Aryan Nair as a personal,
+                    <strong>JARVIS AI</strong> is being built by Æryan ,
                     voice-first assistant that can live on your device,
                     help you automate life, and — eventually —
                     think with you instead of for you.
@@ -519,7 +523,7 @@
             </div>
 
             <div style="margin-top:1rem;">
-                © <span id="year"></span> J.A.R.V.I.S. AI · All rights reserved.
+                © <span id="year"></span> JARVIS AI · All rights reserved.
             </div>
         </footer>
     </main>
