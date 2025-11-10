@@ -16,7 +16,7 @@
 
 # Key Points:
 ## 1. Dart-Flutter Jarvis AI App
-- Purpose: A voice-activated assistant that uses Google’s Generative AI, integrates speech-to-text, text-to-speech, and launches apps or provides weather, time, tells jokes , can talk about/ explain anything but obviously with JARVIS like answers ;) .
+- Purpose: A voice-activated assistant that uses Google’s Generative AI, integrates speech-to-text, text-to-speech, and launches apps or provides weather, time, tells jokes , can talk about / explain anything but obviously with JARVIS like answers ;) .
 - Tech Stack:
     - Flutter for UI
     - Google Generative AI for chat responses
