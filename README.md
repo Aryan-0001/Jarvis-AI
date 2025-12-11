@@ -1,7 +1,7 @@
 <p align="center">
 <img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" width="130" height="45"/>
   <br>
-<img src="https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/app-release.apk" width="150" height ="60"/>
+<img src="https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/Jarvis-app-release-latest.apk" width="150" height ="60"/>
 </p>
 
 # Welcome to Jarvis-AI REPO 👋🏻!
