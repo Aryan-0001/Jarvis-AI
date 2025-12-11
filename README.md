@@ -9,7 +9,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Consolas&size=30&pause=500&color=00FF00&center=true&vCenter=true&width=750&lines=Welcome+to+JARVIS+AI+REPO+!;Want+to+try+out+JARVIS+on+your+mobile+?;Click+the+link+below+to+download+now+!" />
 </p>
 
-- Want to try out jarvis on your mobile?[👉🏻DOWNLOAD APK 🤖](https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/app-release.apk)<br> Check out: [Flutter App](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisAppFlutter)
+- Want to try out jarvis on your mobile?[👉🏻DOWNLOAD APK 🤖](https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/Jarvis-app-release-latest.apk)<br> Check out: [Flutter App](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisAppFlutter)
 ## Check out JARVIS in action: https://www.instagram.com/p/DIRpe-xTabF/
   ## DO CHECK OUT THE RELEASE FOR THE LATEST  APK 👀 <br/> <br> ![Dart](https://img.shields.io/badge/Dart-%230175C1.svg?style=for-the-badge&logo=dart&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%23025687.svg?style=for-the-badge&logo=flutter&logoColor=white)
 - Want to try it out on windows? <br> Check out: [Jarvis Windows](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisWindows) <br/> <br> ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-%23121011.svg?style=for-the-badge&logo=windows&logoColor=white)
