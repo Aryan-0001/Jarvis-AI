@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.3.0/total?style=for-the-badge&label=Latest%20APK%20Downloads%20%20(Jarvis-app-release-latest.apk)" />
+<img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.3.0/total?style=for-the-badge&label=Latest%20APK%20Downloads" />
 </p>
 
 ---
