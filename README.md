@@ -2,6 +2,8 @@
   <!-- Visitor counter -->
   <img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" />
 
+<br>
+
 <img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.3.0/total?style=for-the-badge&label=Latest%20APK%20Downloads" />
 </p>
 
