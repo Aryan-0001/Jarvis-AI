@@ -1,35 +1,31 @@
 <p align="center">
-  <!-- Visitor counter -->
+  <!-- Visitor badge -->
   <img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" />
 </p>
 
-## 📊 APK Download Statistics
+## 📦 Jarvis v1.3.0 Downloads
 
-<table align="center">
-  <tr>
-    <th>Version</th>
-    <th>Downloads</th>
-  </tr>
-  <tr>
-    <td><b>v1.3.0</b></td>
-    <td>
-      <img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.3.0/total?style=for-the-badge" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>v1.2.0</b></td>
-    <td>
-      <img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.2.0/total?style=for-the-badge" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>All Versions</b></td>
-    <td>
-      <img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/total?style=for-the-badge" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <!-- Total downloads for v1.3.0 (both APKs combined) -->
+  <img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.3.0/total?style=for-the-badge&label=v1.3.0%20Total%20Downloads" />
+</p>
 
+<p align="center">
+  <!-- APK buttons -->
+  <a href="https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/JarvisAi_APK">
+    <img src="https://img.shields.io/badge/Download-JarvisAi_APK-blue?style=for-the-badge&logo=android" />
+  </a>
+
+  &nbsp;&nbsp;
+
+  <a href="https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/Jarvis-app-release-latest.apk">
+    <img src="https://img.shields.io/badge/Download-Latest_APK-green?style=for-the-badge&logo=android" />
+  </a>
+</p>
+
+---
+
+# Welcome to Jarvis-AI REPO 👋🏻
 ---
 
 # Welcome to Jarvis-AI REPO 👋🏻!
