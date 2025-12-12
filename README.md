@@ -1,8 +1,36 @@
 <p align="center">
-<img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" width="130" height="45"/>
-  <br>
-<img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/latest/total?style=for-the-badge&label=APK%20Downloads" />
+  <!-- Visitor counter -->
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" />
 </p>
+
+## 📊 APK Download Statistics
+
+<table align="center">
+  <tr>
+    <th>Version</th>
+    <th>Downloads</th>
+  </tr>
+  <tr>
+    <td><b>v1.3.0</b></td>
+    <td>
+      <img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.3.0/total?style=for-the-badge" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>v1.2.0</b></td>
+    <td>
+      <img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.2.0/total?style=for-the-badge" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>All Versions</b></td>
+    <td>
+      <img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/total?style=for-the-badge" />
+    </td>
+  </tr>
+</table>
+
+---
 
 # Welcome to Jarvis-AI REPO 👋🏻!
 <p align="left">
