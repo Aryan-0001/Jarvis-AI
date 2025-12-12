@@ -3,31 +3,6 @@
   <img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" />
 </p>
 
----
-
-## 📦 Jarvis v1.3.0 Downloads
-
-<p align="center">
-  <!-- REAL v1.3.0 download count -->
-  <img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.3.0/total?style=flat-square&label=v1.3.0%20TOTAL%20DOWNLOADS&color=9acd32" />
-</p>
-
-<p align="center">
-  <!-- JarvisAi APK -->
-  <a href="https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/JarvisAi_APK">
-    <img src="https://img.shields.io/badge/🤖%20Download-JarvisAi_APK-2f81f7?style=for-the-badge&logo=android" />
-  </a>
-</p>
-
-<p align="center">
-  <!-- Latest APK -->
-  <a href="https://github.com/Aryan-0001/Jarvis-AI/releases/download/jarvis_v1.3.0/Jarvis-app-release-latest.apk">
-    <img src="https://img.shields.io/badge/⬇️%20Download-Latest_APK-9acd32?style=for-the-badge&logo=android" />
-  </a>
-</p>
-
----
-
 # Welcome to Jarvis-AI REPO 👋🏻!
 <p align="left">
   <img src="https://readme-typing-svg.herokuapp.com?font=Consolas&size=30&pause=500&color=00FF00&center=true&vCenter=true&width=750&lines=Welcome+to+JARVIS+AI+REPO+!;Want+to+try+out+JARVIS+on+your+mobile+?;Click+the+link+below+to+download+now+!" />
