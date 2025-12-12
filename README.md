@@ -3,6 +3,10 @@
   <img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" />
 </p>
 
+<img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.3.0/total?style=for-the-badge&label=v1.3.0%20Total%20Downloads" />
+
+---
+
 # Welcome to Jarvis-AI REPO 👋🏻!
 <p align="left">
   <img src="https://readme-typing-svg.herokuapp.com?font=Consolas&size=30&pause=500&color=00FF00&center=true&vCenter=true&width=750&lines=Welcome+to+JARVIS+AI+REPO+!;Want+to+try+out+JARVIS+on+your+mobile+?;Click+the+link+below+to+download+now+!" />
