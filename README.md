@@ -9,7 +9,7 @@
 <br>
 
 <img
-src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/total?style=for-the-badge&label=All%20Downloads"/>
+src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/total?style=for-the-badge&label=All%20Downloads" />
 
 </p>
 
