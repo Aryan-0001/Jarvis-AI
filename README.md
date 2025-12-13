@@ -7,9 +7,6 @@
 
 <br>
 
-<img
-src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/total?style=for-the-badge&label=Older%20Downloads%20version%202.0" />
-
 </p>
 
 ---
