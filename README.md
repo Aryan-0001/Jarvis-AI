@@ -1,14 +1,16 @@
+<p align="center"><img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" alt="Repository visitor counter"></p>
+
 # J.A.R.V.I.S. — Voice Assistant Projects
 
 **[Explore the JARVIS website](https://aryan-0001.github.io/Jarvis-AI/)** · **[Watch the original Instagram demo](https://www.instagram.com/p/DIRpe-xTabF/)**
 
 A collection of experimental JARVIS-inspired assistants for **Android (Flutter/Dart)** and **Windows (Python)**, plus an early **Jarvis Vision** prototype.
 
-[![License](https://img.shields.io/github/license/Aryan-0001/Jarvis-AI)](LICENSE) [![Issues](https://img.shields.io/github/issues/Aryan-0001/Jarvis-AI)](https://github.com/Aryan-0001/Jarvis-AI/issues) [![Releases](https://img.shields.io/github/v/release/Aryan-0001/Jarvis-AI)](https://github.com/Aryan-0001/Jarvis-AI/releases)
+[![License](https://img.shields.io/github/license/Aryan-0001/Jarvis-AI)](LICENSE) [![Issues](https://img.shields.io/github/issues/Aryan-0001/Jarvis-AI)](https://github.com/Aryan-0001/Jarvis-AI/issues)
 
 **🎬 [Watch JARVIS in action on Instagram](https://www.instagram.com/p/DIRpe-xTabF/)**
 
-> **Android APK status:** Under maintenance. The downloadable release may not work as expected. To use your own Gemini API key, build from source using the Android setup guide below. This is a hobby/experimental project, not a production-ready assistant.
+> **Android APK status:** Under maintenance. There are currently no GitHub releases or downloadable APKs. To use your own Gemini API key, build from source using the Android setup guide below. This is a hobby/experimental project, not a production-ready assistant.
 
 ## New here? Start with these steps
 
@@ -47,15 +49,14 @@ For a **personal local build only**, replace the API placeholder with a key from
 ## Project status and limitations
 
 - The Android source is currently a standalone Dart file, **not a complete Flutter project at the repository root**. A Flutter project scaffold, package dependencies, Android permissions, and assets are needed before building.
-- The Android APK is marked under maintenance; releases are provided as-is.
+- There are currently **no published GitHub releases or downloadable APKs**. Android builds are under maintenance.
 - Windows features may depend on local applications, microphone access, and installed Python packages. Review scripts before executing automation commands.
 - Jarvis Vision is experimental and should not be assumed complete.
 - No automated build or device test results are claimed here.
 
-## Screenshots and releases
+## Screenshots and demo
 
 - [Android screenshots](JarvisAppFlutter/Images/)
-- [GitHub releases](https://github.com/Aryan-0001/Jarvis-AI/releases)
 - [Instagram demo reel](https://www.instagram.com/p/DIRpe-xTabF/)
 
 ## Contribute
@@ -65,3 +66,8 @@ Bug reports, documentation improvements, and focused pull requests are welcome. 
 ## License
 
 See [LICENSE](LICENSE).
+
+---
+
+<p align="center"><img src="https://readme-typing-svg.herokuapp.com?font=cursive&size=30&pause=100&color=00FF00&center=true&vCenter=true&width=750&lines=You+have+reached+the+end+of+this+REPO;Please+leave+behind+a+star+if+u+enjoyed+it+!;Please+feel+free+to+drop+a+suggestion+in+discussion;Thanks+!" alt="You have reached the end of this repo. Please leave a star if you enjoyed it. Feel free to drop a suggestion. Thanks!"></p>
+
