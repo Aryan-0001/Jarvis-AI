@@ -1,3 +1,5 @@
 SpeechRecognition
 pyttsx3
 pyautogui
+psutil
+PyAudio

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins*
+.packages
+build/
+*.apk
+*.aab
+*.jks
+key.properties
+android/local.properties
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local credentials
+*credentials*.json
+*secrets*.json
