@@ -1,57 +1,57 @@
-<p align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=Aryan-0001.Jarvis-AI" />
+# J.A.R.V.I.S. — Voice Assistant Projects
 
-<br>
+A collection of experimental JARVIS-inspired assistants for **Android (Flutter/Dart)** and **Windows (Python)**, plus an early **Jarvis Vision** prototype.
 
-<img src="https://img.shields.io/github/downloads/Aryan-0001/Jarvis-AI/jarvis_v1.3.0/total?style=for-the-badge&label=Latest%20APK%20Downloads" />
+[![License](https://img.shields.io/github/license/Aryan-0001/Jarvis-AI)](LICENSE) [![Issues](https://img.shields.io/github/issues/Aryan-0001/Jarvis-AI)](https://github.com/Aryan-0001/Jarvis-AI/issues) [![Releases](https://img.shields.io/github/v/release/Aryan-0001/Jarvis-AI)](https://github.com/Aryan-0001/Jarvis-AI/releases)
 
-<br>
+**🎬 [Watch JARVIS in action on Instagram](https://www.instagram.com/p/DIRpe-xTabF/)**
 
-⚠️ APK Under Maintenance ⚠️
+> **Android APK status:** Under maintenance. The downloadable release may not work as expected. To use your own Gemini API key, build from source using the Android setup guide below. This is a hobby/experimental project, not a production-ready assistant.
 
-</p>
+## Choose your version
 
----
+| Project | Platform | Description | Start here |
+| --- | --- | --- | --- |
+| [JarvisAppFlutter](JarvisAppFlutter/) | Android | Flutter voice interaction, speech-to-text, text-to-speech, Gemini responses, Android intents | [Android setup](JarvisAppFlutter/README.md) |
+| [JarvisWindows](JarvisWindows/) | Windows | Python voice commands and desktop automation | [Windows setup](JarvisWindows/README.md) |
+| [jarvis-vision](jarvis-vision/) | Experimental | Early vision/object recognition work | [Vision notes](jarvis-vision/README.md) |
 
-# Welcome to Jarvis-AI REPO 👋🏻!
-Check out: [Flutter App](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisAppFlutter)
-## Check out JARVIS in action: https://www.instagram.com/p/DIRpe-xTabF/
-  ## DO CHECK OUT THE RELEASE FOR THE LATEST  APK 👀 <br/> <br> ![Dart](https://img.shields.io/badge/Dart-%230175C1.svg?style=for-the-badge&logo=dart&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%23025687.svg?style=for-the-badge&logo=flutter&logoColor=white)
-- Want to try it out on windows? <br> Check out: [Jarvis Windows](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisWindows) <br/> <br> ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-%23121011.svg?style=for-the-badge&logo=windows&logoColor=white)
+## Android: use your own Gemini API key
 
-# Key Points:
-## 1. Dart-Flutter Jarvis AI App
-- Purpose: A voice-activated assistant that uses Google’s Generative AI, integrates speech-to-text, text-to-speech, and launches apps or provides weather, time, tells jokes , can talk about / explain anything but obviously with JARVIS like answers ;) .
-- Tech Stack:
-    - Flutter for UI
-    - Google Generative AI for chat responses
-    - Speech-to-Text (speech_to_text package) for voice input
-    - Text-to-Speech (flutter_tts package) for voice output
-    - URL Launcher for opening web pages
-    - Android Intents to launch specific apps
-- Installation:
-   - Install Flutter
-   - Set up Google Generative AI API key
-   - Run the app on Android or use in an emulator
- 
+The Android source currently lives in **`JarvisAppFlutter/jarvis.dart`**. In class `_JarvisScreenState`, the source contains:
 
-     ## [View Screenshots](https://github.com/Aryan-0001/Jarvis-AI/tree/main/JarvisAppFlutter/Images)
+```dart
+final String apiKey = "get your api";
+```
 
-## 2. Windows Jarvis AI App (Powershell/CMD)
-- Purpose: A voice-activated assistant for Windows that can perform tasks like searching the web, opening apps, playing music, telling jokes, chat about anything or discuss anything, can write code on your terminal , try saying 'bye' or 'goodbye jarvis' to start the ascii video , and many more things like sending a message using whatsapp to anyone on your contact list or even just a number , etc.
-- Tech Stack:
-  - Python for core logic
-  - SpeechRecognition (speech_recognition package) for voice input
-  - Text-to-Speech (pyttsx3) for voice output
-  - PyAutoGUI for automating UI tasks like opening apps
-  - WebBrowser for browsing
-  - psutil for checking battery status
-- Installation:
-    - Install Python
-    - Install dependencies (pyttsx3, speech_recognition, pyautogui, etc.)
-    - Run the script via CMD or PowerShell
+The model is initialized in `initState()`:
 
-<img src="https://readme-typing-svg.herokuapp.com?font=cursive&size=30&pause=100&color=00FF00&center=true&vCenter=true&width=750&lines=You+have+reached+the+end+of+this+REPO;Please+leave+behind+a+star+if+u+enjoyed+it+!;Please+feel+free+to+drop+a+suggestion+in+discussion;Thanks+!"/>
+```dart
+model = GenerativeModel(model: 'put-exact-model-name-here', apiKey: apiKey);
+```
 
----
----
+For a **personal local build only**, replace the API placeholder with a key from [Google AI Studio](https://aistudio.google.com/app/apikey) and the model placeholder with an available model supported by your SDK and account. **Never commit or share a real key.** See the [full Android setup and safety notes](JarvisAppFlutter/README.md).
+
+**Important:** An API key embedded in a mobile APK can be extracted. This method is suitable only for personal experimentation with a restricted, quota-limited key; a distributed app should call Gemini through a secure backend instead.
+
+## Project status and limitations
+
+- The Android source is currently a standalone Dart file, **not a complete Flutter project at the repository root**. A Flutter project scaffold, package dependencies, Android permissions, and assets are needed before building.
+- The Android APK is marked under maintenance; releases are provided as-is.
+- Windows features may depend on local applications, microphone access, and installed Python packages. Review scripts before executing automation commands.
+- Jarvis Vision is experimental and should not be assumed complete.
+- No automated build or device test results are claimed here.
+
+## Screenshots and releases
+
+- [Android screenshots](JarvisAppFlutter/Images/)
+- [GitHub releases](https://github.com/Aryan-0001/Jarvis-AI/releases)
+- [Instagram demo reel](https://www.instagram.com/p/DIRpe-xTabF/)
+
+## Contribute
+
+Bug reports, documentation improvements, and focused pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before contributing. Please don't post API keys, credentials, or personal information in issues.
+
+## License
+
+See [LICENSE](LICENSE).
