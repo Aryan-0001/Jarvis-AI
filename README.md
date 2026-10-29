@@ -1,5 +1,7 @@
 # J.A.R.V.I.S. — Voice Assistant Projects
 
+**[Explore the JARVIS website](https://aryan-0001.github.io/Jarvis-AI/)** · **[Watch the original Instagram demo](https://www.instagram.com/p/DIRpe-xTabF/)**
+
 A collection of experimental JARVIS-inspired assistants for **Android (Flutter/Dart)** and **Windows (Python)**, plus an early **Jarvis Vision** prototype.
 
 [![License](https://img.shields.io/github/license/Aryan-0001/Jarvis-AI)](LICENSE) [![Issues](https://img.shields.io/github/issues/Aryan-0001/Jarvis-AI)](https://github.com/Aryan-0001/Jarvis-AI/issues) [![Releases](https://img.shields.io/github/v/release/Aryan-0001/Jarvis-AI)](https://github.com/Aryan-0001/Jarvis-AI/releases)
@@ -7,6 +9,14 @@ A collection of experimental JARVIS-inspired assistants for **Android (Flutter/D
 **🎬 [Watch JARVIS in action on Instagram](https://www.instagram.com/p/DIRpe-xTabF/)**
 
 > **Android APK status:** Under maintenance. The downloadable release may not work as expected. To use your own Gemini API key, build from source using the Android setup guide below. This is a hobby/experimental project, not a production-ready assistant.
+
+## New here? Start with these steps
+
+1. **Watch the demo:** [Original Instagram reel](https://www.instagram.com/p/DIRpe-xTabF/).
+2. **Choose a platform:** Android source, Windows Python script, or experimental Vision prototype below.
+3. **Read the matching setup guide before installing.** The Android APK is under maintenance and the Android source is not a complete Flutter project.
+4. **Android users:** Bring your own Gemini API key and model name; never commit a key.
+5. **Need help?** Read the [contribution guide](CONTRIBUTING.md) and [open a detailed issue](https://github.com/Aryan-0001/Jarvis-AI/issues/new/choose).
 
 ## Choose your version
 
